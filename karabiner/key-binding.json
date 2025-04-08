@@ -18,14 +18,13 @@
     ]
 },
 {
-    "description": "Map Control + Delete to Option + Delete",
+    "description": "Map Command + Delete to Option + Delete",
     "manipulators": [
         {
-            "type": "basic",
             "from": {
                 "key_code": "delete_or_backspace",
                 "modifiers": {
-                    "mandatory": ["control"],
+                    "mandatory": ["command"],
                     "optional": ["any"]
                 }
             },
@@ -34,7 +33,8 @@
                     "key_code": "delete_or_backspace",
                     "modifiers": ["option"]
                 }
-            ]
+            ],
+            "type": "basic"
         }
     ]
 }

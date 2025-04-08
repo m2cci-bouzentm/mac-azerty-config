@@ -1,4 +1,5 @@
 {
+
     "description": "Change left_option to left_control + left_command when used alone",
     "manipulators": [
         {
@@ -13,6 +14,27 @@
                 }
             ],
             "type": "basic"
+        }
+    ]
+},
+{
+    "description": "Map Control + Delete to Option + Delete",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "delete_or_backspace",
+                "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_or_backspace",
+                    "modifiers": ["option"]
+                }
+            ]
         }
     ]
 }

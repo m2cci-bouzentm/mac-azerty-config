@@ -1,0 +1,186 @@
+{
+   "editor.linkedEditing": true,
+   "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "[python]": {
+      "editor.defaultFormatter": null
+   },
+   "editor.unicodeHighlight.invisibleCharacters": false,
+   "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+   "editor.fontLigatures": true,
+   "editor.quickSuggestionsDelay": 3,
+   "terminal.integrated.fontFamily": "'Cascadia Code'",
+   "security.workspace.trust.untrustedFiles": "open",
+   "liveServer.settings.donotShowInfoMsg": true,
+   "editor.lineHeight": 1.5,
+   "javascript.updateImportsOnFileMove.enabled": "always",
+   "prettier.singleQuote": false,
+   "workbench.editorAssociations": {
+      "git-rebase-todo": "default"
+   },
+   "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+   },
+   "emmet.preferences": {},
+   "emmet.syntaxProfiles": {},
+   "html.format.wrapLineLength": 130,
+   "todohighlight.include": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.html",
+      "**/*.php",
+      "**/*.css",
+      "**/*.scss"
+   ],
+   "todohighlight.keywords": [
+      {
+         "text": "NOTE",
+         "color": "#ecf0f1",
+         "border": "1px solid #2980b9",
+         "borderRadius": "4px",
+         "backgroundColor": "#3498db"
+      },
+      {
+         "text": "FIXME",
+         "color": "#ecf0f1",
+         "border": "1px solid #red",
+         "borderRadius": "4px",
+         "backgroundColor": "red"
+      },
+      {
+         "text": "BUG:",
+         "color": "#ecf0f1",
+         "border": "1px solid #c0392b",
+         "borderRadius": "4px",
+         "backgroundColor": "#e74c3c"
+      },
+      {
+         "text": "TODO",
+         "color": "#fff",
+         "border": "2px solid #f1c40f",
+         "borderRadius": "4px",
+         "backgroundColor": "#f1c40f"
+      }
+   ],
+   "todohighlight.defaultStyle": {},
+   "tailwindCSS.experimental.configFile": null,
+   "editor.suggestOnTriggerCharacters": true,
+   "tailwindCSS.emmetCompletions": true,
+   "editor.snippetSuggestions": "top",
+   "editor.quickSuggestions": {
+      "strings": "on"
+   },
+   "[c]": {
+      "editor.defaultFormatter": "ms-vscode.cpptools"
+   },
+   "editor.suggest.showStatusBar": true,
+   "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+   },
+   "github.copilot.editor.enableAutoCompletions": true,
+   "prettier.printWidth": 85,
+   "workbench.settings.applyToAllProfiles": ["prettier.printWidth"],
+   "editor.inlineSuggest.suppressSuggestions": true,
+   "[php]": {
+      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+   },
+   "editor.wordWrap": "on",
+   "workbench.layoutControl.enabled": false,
+   "[prisma]": {
+      "editor.defaultFormatter": "Prisma.prisma"
+   },
+   "editor.renderLineHighlight": "gutter",
+   "accessibility.signals.terminalBell": {
+      "sound": "on"
+   },
+   "terminal.integrated.enableVisualBell": true,
+   "editor.fontFamily": "MonoLisa Trial, 'Courier New', monospace",
+   "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+   },
+   "[typescriptreact]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+   },
+   "[java]": {
+      "editor.defaultFormatter": "ms-vsliveshare.vsliveshare"
+   },
+   "terminal.integrated.allowedLinkSchemes": [
+      "file",
+      "http",
+      "https",
+      "mailto",
+      "vscode",
+      "vscode-insiders",
+      "docker-desktop"
+   ],
+   "github.copilot.advanced": {},
+   "[cpp]": {
+      "editor.defaultFormatter": "ms-vscode.cpptools"
+   },
+   "debug.javascript.autoAttachFilter": "disabled",
+   "prettier.tabWidth": 3,
+   "explorer.confirmDragAndDrop": false,
+   "files.autoSaveWhenNoErrors": true,
+   "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "files.autoSave": "afterDelay",
+   "editor.tabSize": 3,
+   "typescript.updateImportsOnFileMove.enabled": "always",
+   "editor.trimAutoWhitespace": false,
+   "[sql]": {
+      "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+   },
+   "terminal.integrated.enableMultiLinePasteWarning": "never",
+   "[nginx]": {
+      "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+   },
+   "[dockercompose]": {
+      "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+   },
+   "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "git.autofetch": true,
+   "editor.pasteAs.preferences": [],
+   "vim.useSystemClipboard": true,
+   "vim.normalModeKeyBindings": [
+      {
+         "before": ["<C-d>"],
+         "after": ["<C-d>", "z", "z"]
+      },
+      {
+         "before": ["<C-u>"],
+         "after": ["<C-u>", "z", "z"]
+      }
+   ],
+   "vim.insertModeKeyBindings": [
+      {
+         "before": ["<CapsLock>"],
+         "after": ["<Esc>"]
+      },
+   ],
+   "vim.handleKeys": {
+      "<C-p>": false,
+      "<C-w>": false,
+      "<C-i>": false,
+      "<C-f>": false,
+      "<C-b>": false
+   },
+   "vim.smartRelativeLine": true,
+   "editor.lineNumbers": "relative",
+   "keyboard.dispatch": "keyCode",
+   "git.openRepositoryInParentFolders": "always",
+   "extensions.experimental.affinity": {
+      "asvetliakov.vscode-neovim": 1
+   },
+   "workbench.colorTheme": "Vim Deep Dark",
+   "workbench.iconTheme": "vscode-icons"
+}

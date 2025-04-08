@@ -1,0 +1,89 @@
+# Reference: https://github.com/i3/i3/blob/next/etc/config
+
+# i3 doesn't have "normalizations" feature that why we disable them here.
+# But the feature is very helpful.
+# Normalizations eliminate all sorts of weird tree configurations that don't make sense.
+# Give normalizations a chance and enable them back.
+enable-normalization-flatten-containers = false
+enable-normalization-opposite-orientation-for-nested-containers = false
+
+# Mouse follows focus when focused monitor changes
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+[mode.main.binding]
+    # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
+    ctrl-cmd-enter = '''exec-and-forget osascript -e '
+    tell application "Terminal"
+        do script
+        activate
+    end tell'
+    '''
+
+    # i3 wraps focus by default
+    ctrl-cmd-h =         'focus --boundaries-action wrap-around-the-workspace left'
+    ctrl-cmd-j =         'focus --boundaries-action wrap-around-the-workspace down'
+    ctrl-cmd-k =         'focus --boundaries-action wrap-around-the-workspace up'
+    ctrl-cmd-l =         'focus --boundaries-action wrap-around-the-workspace right'
+
+    ctrl-cmd-shift-h = 'move left'
+    ctrl-cmd-shift-j = 'move down'
+    ctrl-cmd-shift-k = 'move up'
+    ctrl-cmd-shift-l = 'move right'
+
+
+    # Consider using 'join-with' command as a 'split' replacement if you want to enable
+    # normalizations
+    ctrl-cmd-shift-v = 'split horizontal'
+    ctrl-cmd-v = 'split vertical'
+
+    ctrl-cmd-f = 'fullscreen'
+
+    ctrl-cmd-s = 'layout v_accordion' # 'layout stacking' in i3
+    ctrl-cmd-w = 'layout h_accordion' # 'layout tabbed' in i3
+    ctrl-cmd-e = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
+
+    ctrl-cmd-shift-space = 'layout floating tiling' # 'floating toggle' in i3
+
+    # Not supported, because this command is redundant in AeroSpace mental model.
+    # See: https://nikitabobko.github.io/AeroSpace/guide#floating-windows
+    #ctrl-cmd-space = 'focus toggle_tiling_floating'
+
+    # `focus parent`/`focus child` are not yet supported, and it's not clear whether they
+    # should be supported at all https://github.com/nikitabobko/AeroSpace/issues/5
+    # ctrl-cmd-a = 'focus parent'
+
+    ctrl-cmd-1 = 'workspace 1'
+    ctrl-cmd-2 = 'workspace 2'
+    ctrl-cmd-3 = 'workspace 3'
+    ctrl-cmd-4 = 'workspace 4'
+    ctrl-cmd-5 = 'workspace 5'
+    ctrl-cmd-6 = 'workspace 6'
+    ctrl-cmd-7 = 'workspace 7'
+    ctrl-cmd-8 = 'workspace 8'
+    ctrl-cmd-9 = 'workspace 9'
+    ctrl-cmd-0 = 'workspace 10'
+
+    ctrl-cmd-shift-1 = 'move-node-to-workspace 1'
+    ctrl-cmd-shift-2 = 'move-node-to-workspace 2'
+    ctrl-cmd-shift-3 = 'move-node-to-workspace 3'
+    ctrl-cmd-shift-4 = 'move-node-to-workspace 4'
+    ctrl-cmd-shift-5 = 'move-node-to-workspace 5'
+    ctrl-cmd-shift-6 = 'move-node-to-workspace 6'
+    ctrl-cmd-shift-7 = 'move-node-to-workspace 7'
+    ctrl-cmd-shift-8 = 'move-node-to-workspace 8'
+    ctrl-cmd-shift-9 = 'move-node-to-workspace 9'
+    ctrl-cmd-shift-0 = 'move-node-to-workspace 10'
+
+    ctrl-cmd-shift-c = 'reload-config'
+    
+    ctrl-cmd-shift-q = 'close'
+
+    ctrl-cmd-r = 'mode resize'
+
+[mode.resize.binding]
+    h = 'resize width -50'
+    j = 'resize height +50'
+    k = 'resize height -50'
+    l = 'resize width +50'
+    enter = 'mode main'
+    esc = 'mode main'

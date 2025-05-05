@@ -122,4 +122,42 @@
             "type": "basic"
         }
     ]
+},
+{
+    "description": "Map Cmd+K to Ctrl+PageUp and Cmd+J to Ctrl+PageDown only when used alone",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": []
+                }
+            },
+            "to": [
+                {
+                    "key_code": "page_up",
+                    "modifiers": ["control"]
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": []
+                }
+            },
+            "to": [
+                {
+                    "key_code": "page_down",
+                    "modifiers": ["control"]
+                }
+            ]
+        }
+    ]
 }
+

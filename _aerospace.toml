@@ -10,14 +10,11 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 # Mouse follows focus when focused monitor changes
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
+
+
 [mode.main.binding]
-    # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
-    ctrl-cmd-enter = '''exec-and-forget osascript -e '
-    tell application "Terminal"
-        do script
-        activate
-    end tell'
-    '''
+    # Open Kitty terminal (Super+Enter = Ctrl+Cmd+Enter)
+    ctrl-cmd-enter = 'exec-and-forget open -n -a kitty'
 
     # i3 wraps focus by default
     ctrl-cmd-h =         'focus --boundaries-action wrap-around-the-workspace left'
@@ -79,7 +76,26 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     ctrl-cmd-shift-q = 'close'
 
     ctrl-cmd-r = 'mode resize'
+    
+[workspace-to-monitor-force-assignment]
+    1 = ['secondary', 'main']
 
+    2 = ['secondary', 'main']
+
+    3 = ['secondary', 'main']
+
+    4 = ['secondary', 'main']
+
+    5 = ['secondary', 'main']
+
+    6 = ['secondary', 'main']
+
+    7 = ['secondary', 'main']
+
+    8 = ['secondary', 'main']
+
+    9 = ['secondary', 'main']
+    
 [mode.resize.binding]
     h = 'resize width -50'
     j = 'resize height +50'

@@ -161,13 +161,13 @@
     ]
 }
 {
-    "description": "Undo Ctrl/Cmd swap in Kitty Terminal, map Ctrl+Shift+C/V to Cmd+C/V",
+    "description": "Undo Ctrl/Cmd swap in iTerm2, map Ctrl+Shift+C/V to Cmd+C/V",
     "manipulators": [
         {
             "conditions": [
                 {
                     "bundle_identifiers": [
-                        "^net\\.kovidgoyal\\.kitty$"
+                        "^com\\.googlecode\\.iterm2$"
                     ],
                     "type": "frontmost_application_if"
                 }
@@ -183,7 +183,7 @@
             "conditions": [
                 {
                     "bundle_identifiers": [
-                        "^net\\.kovidgoyal\\.kitty$"
+                        "^com\\.googlecode\\.iterm2$"
                     ],
                     "type": "frontmost_application_if"
                 }
@@ -199,7 +199,7 @@
             "conditions": [
                 {
                     "bundle_identifiers": [
-                        "^net\\.kovidgoyal\\.kitty$"
+                        "^com\\.googlecode\\.iterm2$"
                     ],
                     "type": "frontmost_application_if"
                 }
@@ -223,7 +223,7 @@
             "conditions": [
                 {
                     "bundle_identifiers": [
-                        "^net\\.kovidgoyal\\.kitty$"
+                        "^com\\.googlecode\\.iterm2$"
                     ],
                     "type": "frontmost_application_if"
                 }

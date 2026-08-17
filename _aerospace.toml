@@ -13,8 +13,8 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 
 [mode.main.binding]
-    # Open Kitty terminal (Super+Enter = Ctrl+Cmd+Enter)
-    ctrl-cmd-enter = 'exec-and-forget open -n -a kitty'
+    # Open iTerm2 (Super+Enter = Ctrl+Cmd+Enter)
+    ctrl-cmd-enter = 'exec-and-forget open -na iTerm'
 
     # i3 wraps focus by default
     ctrl-cmd-h =         'focus --boundaries-action wrap-around-the-workspace left'
